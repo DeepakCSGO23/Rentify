@@ -8,7 +8,7 @@ export default function BuyerHome() {
   useEffect(() => {
     async function getAllProperties() {
       const response = await axios.get(
-        "http://localhost:5000/get-all-property"
+        "https://rentify-4asm.onrender.com/get-all-property"
       );
       return response.data;
     }
@@ -24,7 +24,7 @@ export default function BuyerHome() {
   }
   async function handleSearch() {
     const response = await axios.get(
-      `http://localhost:5000/filtered-property?filter=${filterValue}`
+      `https://rentify-4asm.onrender.com/filtered-property?filter=${filterValue}`
     );
     if (response.data === "No Property in the searched place") {
       return;
@@ -33,14 +33,14 @@ export default function BuyerHome() {
   }
   async function handleLike(id, email) {
     const response = await axios.patch(
-      `http://localhost:5000/like-property?id=${id}&email=${email}`
+      `https://rentify-4asm.onrender.com/like-property?id=${id}&email=${email}`
     );
     setPropertyData(response.data);
     console.log(response.data);
   }
   async function handleUnLike(id, email) {
     const response = await axios.patch(
-      `http://localhost:5000/unlike-property?id=${id}&email=${email}`
+      `https://rentify-4asm.onrender.com/unlike-property?id=${id}&email=${email}`
     );
     setPropertyData(response.data);
   }

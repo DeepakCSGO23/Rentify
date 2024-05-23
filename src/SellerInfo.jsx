@@ -7,7 +7,7 @@ export default function SellerInfo() {
       const queryString = new URLSearchParams(window.location.search);
       const email = queryString.get("email");
       const response = await axios.get(
-        `http://localhost:5000/get-profile-info?email=${email}`
+        `https://rentify-4asm.onrender.com/get-profile-info?email=${email}`
       );
       console.log(response.data);
       setProfileData(response.data);

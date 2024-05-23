@@ -10,7 +10,7 @@ export default function EditProperty() {
     const queryString = new URLSearchParams(window.location.search);
     const id = queryString.get("id");
     const response = await axios.patch(
-      `http://localhost:5000/save-edited-property?id=${id}`,
+      `https://rentify-4asm.onrender.com/save-edited-property?id=${id}`,
       formData
     );
     history("/seller-profile");
@@ -36,7 +36,7 @@ export default function EditProperty() {
       const id = queryString.get("id");
       console.log(id);
       const response = await axios.get(
-        `http://localhost:5000/get-one-property?id=${id}`
+        `https://rentify-4asm.onrender.com/get-one-property?id=${id}`
       );
       return response.data;
     }

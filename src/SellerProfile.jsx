@@ -7,7 +7,7 @@ export default function SellerProfile() {
   useEffect(() => {
     async function getProperties() {
       const response = await axios.get(
-        `http://localhost:5000/get-properties?email=${sessionStorage.getItem(
+        `https://rentify-4asm.onrender.com/get-properties?email=${sessionStorage.getItem(
           "email"
         )}`
       );
@@ -22,7 +22,7 @@ export default function SellerProfile() {
   }, []);
   async function handleDelete(id) {
     const response = await axios.delete(
-      `http://localhost:5000/delete-property?id=${id}&email=${sessionStorage.getItem(
+      `https://rentify-4asm.onrender.com/delete-property?id=${id}&email=${sessionStorage.getItem(
         "email"
       )}`
     );

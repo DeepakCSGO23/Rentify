@@ -25,7 +25,7 @@ function SellerHome() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await axios.post(
-      "http://localhost:5000/add-property",
+      "https://rentify-4asm.onrender.com/add-property",
       formData
     );
     if (response.status === 200) {

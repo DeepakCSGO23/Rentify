@@ -21,7 +21,7 @@ export default function Login() {
     console.log(formData);
     sessionStorage.setItem("email", formData.email);
     const response = await axios.get(
-      `http://localhost:5000/login?email=${formData.email}&password=${formData.password}`
+      `https://rentify-4asm.onrender.com/login?email=${formData.email}&password=${formData.password}`
     );
     console.log(response);
     if (response.data.message === "Login successful") {

@@ -17,7 +17,7 @@ function Register() {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     const response = await axios.post(
-      "http://localhost:5000/register",
+      "https://rentify-4asm.onrender.com/register",
       formData
     );
     // New User
