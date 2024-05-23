@@ -1,0 +1,38 @@
+@font-face {
+    font-family: roboto_cbold;
+    src: url('fonts/RobotoCondensed-Bold.ttf');
+  }
+  .roboto_cbold {
+    font-family: roboto_cbold;
+  }
+  @font-face {
+    font-family: roboto_cregular;
+    src: url('fonts/RobotoCondensed-Regular.ttf');
+  }
+  .roboto_cregular {
+    font-family: roboto_cregular;
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: mountains;
+    src: url('fonts/beyond_the_mountains.otf')
+  }
+  
+  @font-face {
+    font-family: roboto_clight;
+    src: url('fonts/RobotoCondensed-Light.ttf')
+  }
+  .roboto_clight{
+    font-family: roboto_clight ;
+  }
+  @font-face {
+    font-family: playfair;
+    src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf')
+  }
+  .playfair{
+    font-family: playfair ;
+  }
+  input{
+    font-size: small;
+    size: 500px;
+  }
