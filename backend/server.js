@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 require("dotenv").config();
 const app = express();
 // Enable CORS
-app.use(cors({origin:['https://heroic-naiad-f94d27.netlify.app']}));
+app.use(cors({origin:['https://heroic-naiad-f94d27.netlify.app','https://664f0f674e2aa305e055f23d--heroic-naiad-f94d27.netlify.app']}));
 
 // Parse JSON bodies
 app.use(express.json());
